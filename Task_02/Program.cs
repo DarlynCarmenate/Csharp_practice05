@@ -20,19 +20,19 @@ void PrintArray(int[] Mas)
     }
 }
 
-// void NewArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i = i + 2)
-//     {
-//         Console.Write(arr[i] + ",");
-//     }
-// }
+void NewArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i = i + 2)
+    {
+        Console.Write(array[i] + ",");
+    }
+}
 
 int[] arr = RandArray(20);
 PrintArray(arr);
 Console.WriteLine();
 Console.WriteLine("Числа на нечетных позициях: ");
-// NewArray(arr);
+NewArray(arr);
 
 
 
