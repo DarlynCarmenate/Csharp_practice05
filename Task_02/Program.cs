@@ -20,19 +20,20 @@ void PrintArray(int[] Mas)
     }
 }
 
-void NewArray(int[] array)
+int Result(int[] array)
 {
+    int value = 0;
     for (int i = 0; i < array.Length; i = i + 2)
     {
-        Console.Write(array[i] + ",");
+        value = value + i;
     }
+    return value;
 }
 
 int[] arr = RandArray(20);
 PrintArray(arr);
 Console.WriteLine();
-Console.WriteLine("Числа на нечетных позициях: ");
-NewArray(arr);
+Console.WriteLine($"Сумма элементов на нечетных позициях: {Result(arr)}");
 
 
 
